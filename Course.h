@@ -20,7 +20,7 @@ Course(string co,string cm,int m,int cu);
 
 addStudents(const Student& s);
 displayCourseInfo();
-~Course():
+~Course();
 
 };
 
