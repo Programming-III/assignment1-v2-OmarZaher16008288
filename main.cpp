@@ -27,10 +27,16 @@ void Person::display(){
 
 // ==================== Student Class Implementation ====================
 Student::Student(string n,int i,int y,string m) : Person(n,i){
-
+yearlevel=y;
+major = m;
    
 }
-void Student:: display()
+void Student:: display(){
+Person::display();
+   cout<<"yearlevel: "<<yearlevel<<endl;
+   cout<<"major: "<<major<<endl;
+   
+}
 
 
 
