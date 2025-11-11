@@ -66,26 +66,28 @@ Person::display():
 
 // ==================== Course Class Implementation ====================
 
-string coursecode;
-string coursename;
-int maxStudents;
-Student* students;
-int currentStudents;
 
-public:
 
-Course::Course(string co,string cm,int m,int cu){
-   
+Course::Course(string co,string cm,int m,int cu) {
+   coursecode=co;
+   coursename=cm;
+   maxStudents=m;
+   students=new Student(maxStudents);
+   currentStudents=cu;
 }
 
 void Course::addStudents(const Student& s){
    
+   for(int i =0 ; i<maxStudents;i++){
+      
+   }
+   delete[]students;
 }
 void Course::displayCourseInfo(){
    
 }
 Course::~Course(){
-   
+   delete[]students;
 }
 
 
