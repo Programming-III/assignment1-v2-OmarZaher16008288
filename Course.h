@@ -16,7 +16,7 @@ int currentStudents;
 
 public:
 
-Course(string co,string cm,int m,int cu);
+Course(string co,string cm,int m);
 
 void addStudents(const Student& s);
 void displayCourseInfo();
