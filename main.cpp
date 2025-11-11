@@ -68,23 +68,28 @@ Person::display():
 
 
 
-Course::Course(string co,string cm,int m,int cu) {
+Course::Course(string co,string cm,int m) {
    coursecode=co;
    coursename=cm;
    maxStudents=m;
-   students=new Student(maxStudents);
-   currentStudents=cu;
+   students=NULL;
+   currentStudents=0;
 }
 
 void Course::addStudents(const Student& s){
    
-   for(int i =0 ; i<maxStudents;i++){
-      
-   }
+   students[currentStudents] = s;
+   currentStudents++;
    delete[]students;
 }
 void Course::displayCourseInfo(){
-   
+   for(int i = 0; i < currentStudents; i++) {
+	cout << students[i] << endl;
+}
+   cout<<"coursecode: "<<coursecode<<end;
+    cout<<"coursename: "<<coursename<<end;
+    cout<<"maxStudents: "<<maxStudents<<end;
+    cout<<"currentStudents: "<<currentStudents<<end;
 }
 Course::~Course(){
    delete[]students;
@@ -98,7 +103,7 @@ Course::~Course(){
 
 // ==================== Main Function ====================
 int main() {
-   
+   Course c1("CS101","introduction to Programing",3);
     
     return 0;
 }
