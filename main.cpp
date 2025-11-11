@@ -45,7 +45,22 @@ Person::display();
 
 // ==================== Instructor Class Implementation ====================
 
+string departement;
+int experiences;
 
+
+Insructor::Insructor(string n,int i,string d,int e) :Person(n,i){
+departement=d;
+   
+experiences=e;
+   
+}
+void Insructor::display(){
+Person::display():
+   cout<<"departement: "<<departement<<endl;
+   cout<<"experiences: "<<experiences<<endl;
+   
+}
 
 
 
