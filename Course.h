@@ -18,8 +18,8 @@ public:
 
 Course(string co,string cm,int m,int cu);
 
-addStudents(const Student& s);
-displayCourseInfo();
+void addStudents(const Student& s);
+void displayCourseInfo();
 ~Course();
 
 };
