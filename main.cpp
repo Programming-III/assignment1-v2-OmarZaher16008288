@@ -31,7 +31,7 @@ yearlevel=y;
 major = m;
    
 }
-void Student:: display(){
+void Student::display(){
 Person::display();
    cout<<"yearlevel: "<<yearlevel<<endl;
    cout<<"major: "<<major<<endl;
