@@ -45,8 +45,7 @@ Person::display();
 
 // ==================== Instructor Class Implementation ====================
 
-string departement;
-int experiences;
+
 
 
 Insructor::Insructor(string n,int i,string d,int e) :Person(n,i){
@@ -67,6 +66,27 @@ Person::display():
 
 // ==================== Course Class Implementation ====================
 
+string coursecode;
+string coursename;
+int maxStudents;
+Student* students;
+int currentStudents;
+
+public:
+
+Course::Course(string co,string cm,int m,int cu){
+   
+}
+
+void Course::addStudents(const Student& s){
+   
+}
+void Course::displayCourseInfo(){
+   
+}
+Course::~Course(){
+   
+}
 
 
 
