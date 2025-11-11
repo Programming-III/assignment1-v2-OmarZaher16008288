@@ -104,6 +104,5 @@ Course::~Course(){
 // ==================== Main Function ====================
 int main() {
    Course c1("CS101","introduction to Programing",3);
-    
     return 0;
 }
