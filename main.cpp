@@ -55,7 +55,7 @@ experiences=e;
    
 }
 void Insructor::display(){
-Person::display():
+Person::display();
    cout<<"departement: "<<departement<<endl;
    cout<<"experiences: "<<experiences<<endl;
    
