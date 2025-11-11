@@ -5,7 +5,24 @@
 #include "Student.h"
 using namespace std;
 //#write your code here
+class Course{
 
+private:
+string coursecode;
+string coursename;
+int maxStudents;
+Student* students;
+int currentStudents;
+
+public:
+
+Course(string co,string cm,int m,int cu);
+
+addStudents(const Student& s);
+displayCourseInfo();
+
+
+};
 
 
 
