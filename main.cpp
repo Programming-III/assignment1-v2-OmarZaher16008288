@@ -26,6 +26,11 @@ void Person::display(){
 
 
 // ==================== Student Class Implementation ====================
+Student::Student(string n,int i,int y,string m) : Person(n,i){
+
+   
+}
+void Student:: display()
 
 
 
