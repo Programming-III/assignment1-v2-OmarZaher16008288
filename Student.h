@@ -14,7 +14,7 @@ int yearlevel;
 string major;
 
 public:
-Student(int y,string m);
+Student(string n,int i,int y,string m);
 void display();
 
 
