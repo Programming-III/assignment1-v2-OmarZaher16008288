@@ -10,7 +10,15 @@ using namespace std;
 
 // ==================== Person Class Implementation =========================
 
+Person::Person(string n,int i){
+   name =n;
+   id =i;
+}
+void Person::display(){
 
+   cout<<"Name: "<<name<<endl;
+   cout<<"ID: "<<id<<endl;
+}
 
 
 
